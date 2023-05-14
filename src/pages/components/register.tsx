@@ -10,10 +10,9 @@ export function Register () {
   return (
     <RegisterContainer>
       <div className="arrow">
-
-      <Link to='/' style={{textDecoration: 'none',display: 'flex', alignItems: 'center', justifyContent: 'center'}}><BiArrowFromRight size={40} color='#00A551'/>
+      <Link to='/' style={{textDecoration: 'none',display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+        <BiArrowFromRight size={40} color='#00A551'/>
       <span>Go Back</span>
-      
       </Link>
       </div>
       <div className="text">
