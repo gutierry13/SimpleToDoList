@@ -69,4 +69,8 @@ export const FormContainer = styled.form`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  input{
+    width: 18.7rem;
+    height: 1.875rem;
+  }
 `
