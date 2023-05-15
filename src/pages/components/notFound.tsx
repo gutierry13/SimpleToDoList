@@ -1,6 +1,10 @@
+import { NotFoundTitle } from "../styles/notFound";
 
 export function NotFound  () {
   return (
-    <h1>Essa página não foi desenvolvida ou está desabilitada</h1>
+    <NotFoundTitle>
+      This page does not exist ¯\_(ツ)_/¯
+
+    </NotFoundTitle>
   )
 }
