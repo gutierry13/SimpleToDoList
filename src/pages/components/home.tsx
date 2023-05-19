@@ -1,28 +1,36 @@
-import { HomeContainer } from "../styles/home";
-import {RiArrowDropDownLine,RiArrowDropRightLine} from "react-icons/ri";
-import {IoAddCircleOutline} from "react-icons/io5";
-export function Home () {
+import { HomeNavAside, HomeContainer, HomeMainContent } from '../styles/home'
+import { FaUser } from 'react-icons/fa'
+import { BiLogOut } from 'react-icons/bi'
+import { ToggleDarkAndLightButton } from './toggleDarkAndLight'
+import { HomeDivTable } from './homeDivTable'
+
+export function Home() {
   return (
-    
     <HomeContainer>
-      <nav>
-      <div className="title">
-       <h1>New project</h1>
-       <IoAddCircleOutline size={30}/>
-      </div>
-        <div className="projects">
-        <h2>Projects</h2>
-       <RiArrowDropRightLine size={40}/>
-        </div>
-        <div className="tasks">
-        <h2>Tasks</h2>
-       <RiArrowDropDownLine size={40}/>
-        </div>
-      </nav>
-      <footer>
-        <input type="checkbox" name="theme" id="theme" />
-        <label htmlFor="theme">Toggle</label>
-      </footer>
+      <HomeNavAside>
+        <header>
+          <FaUser />
+          <p>Meu perfil</p>
+        </header>
+        <section>
+          <h1>My lists</h1>
+        </section>
+        <footer>
+          <ToggleDarkAndLightButton />
+          <div>
+            <BiLogOut />
+            <p>Logout</p>
+          </div>
+        </footer>
+      </HomeNavAside>
+      {/* <h1>Essa pagina ainda está em desenvolvimento</h1> */}
+      <HomeMainContent>
+        <h1>My lists</h1>
+        <HomeDivTable />
+      </HomeMainContent>
     </HomeContainer>
   )
 }
+
+/* <h1>Essa pagina ainda está em desenvolvimento ¯\_(ツ)_/¯</h1>
+<p>Acompanhe mais sobre o projeto no <a href="https://github.com/gutierry13/SimpleToDoList">Github</a></p> */
